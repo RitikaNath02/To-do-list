@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
+.box{
+    display: flex;
+    
+    padding: 34px;
+    font-size: 1.4rem;
+    border: 2px solid black;
+    width: 100%;
+    max-width: 540px;
+    margin: 56px auto;
+    background-color: blueviolet;
+    border-radius: 8px;
+    flex-direction:column;
+  
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box img{
+    height: 120px;
+    width: 120px;
+    padding:14px;
+    margin-left: 15px;
+}
+
+.input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid black;
+  border-radius: 40px;
+  padding-left: 10px;
+  background-color: beige;
+
+
+}
+input{
+    flex: 1;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+
+}
+button{
+    border: none;
+    background: #f33a5a;
+    padding: 16px 30px;
+    
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    font-size: 18px;
+    padding-top: 15px ;
+    padding-left: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    background-image: url('circle.png');
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    left: 5px;
+    background-size: cover;
+    background-position: center;
+
+}
+ul li.checked{
+    color: grey;
+}
+ul li.checked::before{
+    background-image: url('tick.jpg');
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    color: #150306;
+    font-weight: bold;
+
+}
+ul li span:hover{
+    background-color: grey;
+} 
+
+
+
+
+
+
+
+/* utility classes */
+.center{
+    align-items: center;
+    justify-content: center;
+}
